@@ -4,7 +4,7 @@ from unittest.mock import MagicMock, patch
 
 # Mock API key before importing router to prevent initialization errors
 with patch.dict(os.environ, {"GOOGLE_API_KEY": "sk-mock-key"}):
-    from router import classify_intent, route_and_respond, LOG_FILE
+    from router import classify_intent, route_and_respond, LOG_FILE  # type: ignore
 
 def test_classification_malformed_json():
     """Verifies that malformed JSON from Gemini results in an 'unclear' intent."""

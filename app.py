@@ -1,4 +1,4 @@
-from router import route_and_respond
+from router import route_and_respond  # type: ignore
 
 def main():
     print("=== LLM-Powered Prompt Router ===")
