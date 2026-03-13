@@ -49,7 +49,14 @@ Verify logic and fallback mechanisms:
 python test_router.py
 ```
 
-### Integration Example
+### Quick Terminal Test
+Run a quick test directly from your command line:
+```bash
+python -c "from router import route_and_respond; print(route_and_respond('How do I fix a bug in Python?'))"
+```
+
+### Integration in Your Code
+To use the router in your own Python script (`main.py`):
 ```python
 from router import route_and_respond
 
